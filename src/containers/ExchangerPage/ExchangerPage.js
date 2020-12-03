@@ -26,8 +26,7 @@ class ExchangerPage extends Component {
     }
 
     handleChange = ({target:{name, value}}) => {
-        const {first, second, currentCurrency} = this.state;
-        const {currency} = this.props;
+        const {currentCurrency} = this.state;
         if(name === 'first') {
             this.setState({
                 first: value,
